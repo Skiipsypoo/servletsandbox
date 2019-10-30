@@ -16,6 +16,7 @@ import java.sql.SQLException;
 @WebServlet(name = "eksempelfunksjon", urlPatterns = "/servlets.eksempelfunksjon")
 public class eksempelfunksjon extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //Her setter vi at dokumentet som servlet lager skal være et html dokument
         response.setContentType("text/html");
 
         //Printwriter trenger vi for å skrive ut html og liggnans til siden
